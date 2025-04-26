@@ -2,6 +2,7 @@
 using Nascente.Application.UseCases.Expenses.Register;
 using Nascente.Communication.Requests;
 using Nascente.Communication.Responses;
+using Nascente.Exception.ExceptionsBase;
 
 namespace Nascente.Api.Controllers;
 
@@ -20,21 +21,15 @@ public class ExpensesController : ControllerBase
 
             return Created(string.Empty, response);
         }
-        catch (ArgumentException ex)
+        catch (ErrorOnValidationException ex)
         {
-            var errorResponse = new ResponseErrorJson
-            {
-                ErrorMessage = ex.Message,
-            }; 
+            var errorResponse = new ResponseErrorJson(ex.Errors);
 
             return BadRequest(errorResponse);
         }
         catch
         {
-            var errorResponse = new ResponseErrorJson
-            {
-                ErrorMessage = "unknowm error"
-            };
+            var errorResponse = new ResponseErrorJson("unknowm error");
 
             return StatusCode(StatusCodes.Status500InternalServerError, errorResponse);
         }
