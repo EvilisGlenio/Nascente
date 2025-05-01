@@ -17,7 +17,7 @@
 ## 🛠️ Tecnologias utilizadas
 
 **Frontend**
-- [Next.js](https://nextjs.org/)
+- [Angular](https://angular.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
 **Backend**
