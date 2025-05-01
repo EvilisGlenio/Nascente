@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Nascente.Communication.Responses;
+using Nascente.Exception;
 using Nascente.Exception.ExceptionsBase;
 
 namespace Nascente.Api.Filters;
@@ -43,7 +44,7 @@ public class ExceptionFilter : IExceptionFilter
 
     private void ThrowUnknownError(ExceptionContext context) 
     {
-        var errorResponse = new ResponseErrorJson("unknowm error");
+        var errorResponse = new ResponseErrorJson(ResourceErrorMessages.UNKNOWN_ERROR);
 
         context.HttpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
         context.Result = new ObjectResult(errorResponse);
