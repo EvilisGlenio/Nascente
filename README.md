@@ -24,7 +24,7 @@
 - [.NET](https://dotnet.microsoft.com/)
 
 **Banco de Dados**
-- (Ex: PostgreSQL, MongoDB, etc.)
+- (MySQL)
 
 **Outros**
 - Clean Code
