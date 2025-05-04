@@ -1,5 +1,5 @@
-﻿using Nascente.Application.UseCases.Expenses.Register;
-using Nascente.Communication.Requests;
+﻿using CommonTestUtilities.Requests;
+using Nascente.Application.UseCases.Expenses.Register;
 
 namespace Validators.Tests.Expenses.Register;
 
@@ -10,15 +10,7 @@ public class RegisterExpenseValidatorTests
     {
         // Arrange
         var validator = new RegisterExpenseValidator();
-        var request = new RequestRegisterExpenseJson
-        {
-            Title = "Title",
-            Description = "Description",
-            Amount = 100,
-            Date = DateTime.Now.AddDays(-1),
-            PaymentType = Nascente.Communication.Enums.PaymentType.Cash
-
-        };
+        var request = RequestRegisterExpenseJsonBuilder.Build();
 
         // Act
         var result = validator.Validate(request);

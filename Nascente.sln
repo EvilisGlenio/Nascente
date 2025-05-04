@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nascente.Infrastructure", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validators.Tests", "tests\Validators.Tests\Validators.Tests.csproj", "{D3636892-4983-40BD-B14D-7D1823874CC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTestUtilities", "tests\CommonTestUtilities\CommonTestUtilities.csproj", "{D4E83205-A171-4E0F-B9B0-97852F684087}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{D3636892-4983-40BD-B14D-7D1823874CC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3636892-4983-40BD-B14D-7D1823874CC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3636892-4983-40BD-B14D-7D1823874CC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4E83205-A171-4E0F-B9B0-97852F684087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4E83205-A171-4E0F-B9B0-97852F684087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4E83205-A171-4E0F-B9B0-97852F684087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4E83205-A171-4E0F-B9B0-97852F684087}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{19151BBF-5347-4CB0-935E-600B38754FD8} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{95336491-DA44-4B72-8A8C-AD6C8809EDC5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{D3636892-4983-40BD-B14D-7D1823874CC9} = {F04B64A7-9AF7-449A-A942-593068E8A42E}
+		{D4E83205-A171-4E0F-B9B0-97852F684087} = {F04B64A7-9AF7-449A-A942-593068E8A42E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E8F851DA-88D2-4FDF-943C-8B2EC9DDFC71}
