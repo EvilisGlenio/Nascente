@@ -20,6 +20,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\Nascente.Application\Nascente.Application.csproj" />
     <ProjectReference Include="..\..\src\Nascente.Communication\Nascente.Communication.csproj" />
+    <ProjectReference Include="..\..\src\Nascente.Exception\Nascente.Exception.csproj" />
     <ProjectReference Include="..\CommonTestUtilities\CommonTestUtilities.csproj" />
   </ItemGroup>
 
