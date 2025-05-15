@@ -14,6 +14,7 @@
     <ProjectReference Include="..\Nascente.Communication\Nascente.Communication.csproj" />
     <ProjectReference Include="..\Nascente.Domain\Nascente.Domain.csproj" />
     <ProjectReference Include="..\Nascente.Exception\Nascente.Exception.csproj" />
+    <ProjectReference Include="..\Nascente.Infrastructure\Nascente.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -3,7 +3,7 @@ using Nascente.Domain.Entities;
 
 namespace Nascente.Infrastructure.DataAcess;
 
-public class CashFlowDBContext : DbContext
+public class NascenteDBContext : DbContext
 {
     public DbSet<Expense> Expenses { get; set; }
 
